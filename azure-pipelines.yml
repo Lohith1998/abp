@@ -25,11 +25,7 @@ steps:
 
 
 
-- task: Docker@2
-  displayName: buildAndPush
-  inputs:
-    containerRegistry: 'Docker hub '
-    repository: 172054/mummy
+
 - task: VSTest@2
   displayName: 'Test Assemblies'
   inputs:
